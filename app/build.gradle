@@ -19,13 +19,13 @@ import groovy.xml.MarkupBuilder;
 apply plugin: 'com.android.application'
 
 def twaManifest = [
-    applicationId: 'org.chromium.twa.svgomg',
-    hostName: 'svgomg.firebaseapp.com', // The domain being opened in the TWA.
+    applicationId: 'com.goget.stagingtwa',
+    hostName: 'staging-app.goget.my', // The domain being opened in the TWA.
     launchUrl: '/', // The start path for the TWA. Must be relative to the domain.
-    name: 'SVGOMG TWA', // The name shown on the Android Launcher.
-    themeColor: '#303F9F', // The color used for the status bar.
-    navigationColor: '#303F9F', // The color used for the navigation bar.
-    backgroundColor: '#bababa', // The color used for the splash screen background.
+    name: 'GoGet Staging', // The name shown on the Android Launcher.
+    themeColor: '#ffffff', // The color used for the status bar.
+    navigationColor: '#ffffff', // The color used for the navigation bar.
+    backgroundColor: '#000000', // The color used for the splash screen background.
     enableNotifications: false, // Set to true to enable notification delegation.
     useBrowserOnChromeOS: true, // Set to false if you've added interaction with Android system APIs.
     // Add shortcuts for your app here. Every shortcut must include the following fields:
@@ -47,7 +47,7 @@ android {
         applicationId twaManifest.applicationId
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 3
+        versionCode 4
         versionName "1.1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
